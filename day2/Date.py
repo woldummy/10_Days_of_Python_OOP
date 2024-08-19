@@ -1,9 +1,10 @@
 # -*- coding: UTF-8 -*-
-# 
+# Date class with a class method that is used as an alternative constructor
 # Name: wolke
 # Date: 2024-08-13
 # macOS: 14.2.1  Python: 3.12
 
+from typing import Self
 
 class Date:
     def __init__(self, year, month, day):
@@ -12,7 +13,7 @@ class Date:
         self.day = day
 
     @classmethod
-    def from_string(cls, date_as_string: str) -> Date:
+    def from_string(cls, date_as_string: str) -> Self:
         year, month, day = map(int, date_as_string.split('-'))
         return cls(year, month, day) # Creating a new instance using the class method
 
