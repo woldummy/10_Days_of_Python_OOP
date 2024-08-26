@@ -21,3 +21,4 @@ def say_hello(name):
 if __name__ == "__main__":
     # The function is wrapped by the decorator
     say_hello("Alice")
+    print(say_hello.__name__)

@@ -11,21 +11,20 @@
 
 from functools import wraps
 
-
 def logged(func):
-    # @wraps(func)
+    @wraps(func)
     def with_logging(*args, **kwargs):
         print(func.__name__ + " was called")
         return func(*args, **kwargs)
     return with_logging
 
-# @logged
-def f(x):
+@logged
+def foo(x):
     """does some math"""
     return x + x * x
 
 if __name__ == "__main__":
-    result = f(2)
+    result = foo(2)
     print(f"Result: {result}")  # prints '6'
-    print(f"Function in use: {f.__name__}")  # prints 'f'
-    print(f"Doc of function in use: {f.__doc__}")  # prints 'does some math'
+    print(f"Function in use: {foo.__name__}")  # prints 'f'
+    print(f"Doc of function in use: {foo.__doc__}")  # prints 'does some math'

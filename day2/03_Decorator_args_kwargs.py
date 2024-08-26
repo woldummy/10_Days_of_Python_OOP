@@ -26,8 +26,9 @@ def add_better_decorator(func):
 def add(a, b):
     return a + b
 
+
 @add_better_decorator
-def better_add(*args):
+def better_add(*args):  # *args, *kwargs
     sum = 0
     for arg in args:
         sum += arg
@@ -36,5 +37,6 @@ def better_add(*args):
 
 if __name__ == "__main__":
     # The functions are wrapped by the decorator
-    print(add(1, 2))
+    # print(add(1, 2))
     print(better_add(1, 2, 3, 4, 5))
+    print(better_add.__name__)

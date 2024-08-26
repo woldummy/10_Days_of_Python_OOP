@@ -28,10 +28,11 @@ def waste_some_time(num_times):
     for _ in range(num_times):
         sum([number**2 for number in range(10_000)])
 
-waste_some_time(1)
-waste_some_time(999)
+if __name__ == "__main__":
+    waste_some_time(1)
+    waste_some_time(999)
 
-# The @functools.wraps decorator uses the function functools.update_wrapper()
-# to update special attributes like __name__ and __doc__.
-print(waste_some_time.__name__)
-help(waste_some_time)
+    # The @functools.wraps decorator uses the function functools.update_wrapper()
+    # to update special attributes like __name__ and __doc__.
+    print(waste_some_time.__name__)
+    help(waste_some_time)
