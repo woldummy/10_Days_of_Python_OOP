@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-# EXample of __str__ and __repr__ methods
+# Example of __str__ and __repr__ methods
 # Name: wolke
 # Date: 2024-08-20
 # macOS: 14.2.1  Python: 3.12
