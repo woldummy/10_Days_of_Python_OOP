@@ -37,7 +37,6 @@ class Account:
         if 0 < amount <= self.__balance:
             self.__balance -= amount
 
-
     def get_balance(self) -> float:
         return self.__balance
 
