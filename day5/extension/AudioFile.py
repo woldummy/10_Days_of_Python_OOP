@@ -7,5 +7,5 @@ from day5.extension.MediaFile import MediaFile
 
 class AudioFile(MediaFile):
     def play(self):
-        return f"Playing audio file: {self.name}"
+        return f"Playing {type(self).__name__} file: {self.name}"
 

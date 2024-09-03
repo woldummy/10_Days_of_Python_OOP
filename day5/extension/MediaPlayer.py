@@ -26,8 +26,8 @@ class MediaPlayer:
 
 if __name__ == "__main__":
     # Creating instances of media files
-    audio1 = AudioFile("song1.mp3")
-    video1 = VideoFile("video1.mp4")
+    audio1 = AudioFile("HeavenAndHell.mp3")
+    video1 = VideoFile("Baby Driver.mp4")
 
     # Creating the media player
     player = MediaPlayer()

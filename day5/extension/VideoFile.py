@@ -8,5 +8,6 @@ from day5.extension.MediaFile import MediaFile
 
 
 class VideoFile(MediaFile):
+
     def play(self):
-        return f"Playing video file: {self.name}"
+        return f"Playing  {type(self).__name__} file: {self.name}"
