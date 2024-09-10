@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-# 
+# creating own ContextManager with __enter__ and __exit__
 # Name: wolke
 # Date: 2024-09-10
 # macOS: 14.2.1  Python: 3.12
