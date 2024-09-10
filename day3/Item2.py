@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-# 
+# usage of total_ordering form functools
 # Name: wolke
 # Date: 2024-08-20
 # macOS: 14.2.1  Python: 3.12
